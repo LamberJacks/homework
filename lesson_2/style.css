@@ -1,0 +1,24 @@
+.blok_1{
+  background-color: #3c3730;
+  color: white;
+}
+
+.blok_2{
+  background-color: #3c3730;
+}
+
+.sqare{
+  width: 100px;
+  height: 100px;
+  background-color: #eb4b4b;
+}
+
+.elements{
+  background-color: #c088f4;
+  width: 300px;
+}
+
+.elements__element{
+  color: white;
+  background-color: #832cd5;
+}
