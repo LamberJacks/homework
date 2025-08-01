@@ -1,0 +1,23 @@
+.head{
+  height: 60px;
+  background-color: #e4cb2c;
+}
+
+.one-section__image{
+  width: 325px;
+  height: 325px;
+}
+
+.two-section__bq{
+  background-color: #ede9c9;
+}
+
+footer{
+  color: white;
+  background-color: #7d00c1;
+  height: 300px;
+}
+
+.url{
+  color: white;
+}
