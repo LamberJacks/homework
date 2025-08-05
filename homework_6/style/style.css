@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+}
+.elements{
+  overflow: auto;
+  width: 1350px;
+  height: 550px;
+  border: 1px solid #000;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.elements__element{
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 25px;
+  width: 270px;
+  border: 1px solid #474747;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 5px 1px rgb(49, 49, 49);
+  background-color: #f3cc9f;
+}
