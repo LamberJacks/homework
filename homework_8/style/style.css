@@ -1,0 +1,125 @@
+body{
+  background: url("../files/bg-hero_1.webp") 0% 0% /cover no-repeat;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+/* ====================== */
+
+.header{
+  padding: 30px 0 36px;
+  width: 100%;
+}
+.header__inner{
+  display: flex;
+  align-items: center;
+}
+.nav{
+  margin-left: 70px;
+  width: 100%;
+}
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list-item{
+  margin-right: 50px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav__list-item--bg-yellow{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  background-color: #bb9356;
+  color: #ffffff;
+  border-color: #bb9356;
+  padding: 7px;
+}
+
+.nav__list-item--bg-yellow img{
+  width: 30px;
+}
+
+/* ================================= */
+.hero{
+  /* background: url("../files/bg-hero.webp") 0% 0% /cover no-repeat; */
+  padding: 150px 0px;
+}
+
+.hero__title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero__title-2{
+  color: #bb9356;
+  font-family: 'Ruthie', cursive;
+  font-size: 45px;
+  font-weight: 400;
+}
+.hero__title-1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+.hero__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__inner-text{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+}
+
+.hero__button{
+  background-color: #bb9356;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 13px 10%;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ============================== */
+
+.footer{
+  background-color: black;
+  border-top: 1px solid wheat;
+  margin-top: 15px;
+}
+
+.footer__desc{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__desc-text{
+  margin-top: 10px;
+  max-width: 500px;
+  text-align: center;
+}
