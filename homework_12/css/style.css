@@ -1,0 +1,63 @@
+* {
+  font-family: sans-serif;
+  color: antiquewhite;
+}
+.body{
+  min-height: 200vh;
+}
+.body--fixed{
+  overflow-y: hidden;
+}
+
+.btn-open{
+  width: 300px;
+  position: relative;
+  top:50vh;
+  left: 40vw;
+  background: black;
+  border-radius: 100px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal__close-btn{
+  position: absolute;
+  color: black;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.modal{
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000c1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.modal__window{
+  color: black;
+  position: relative;
+  width: 50vw;
+  min-height: 40vh;
+  padding: 50px 20px 20px 20px;
+  background-color: aliceblue;
+  border-radius: 12px;
+}
+
+.modal--open{ 
+  visibility: visible;
+  opacity: 1;
+}
