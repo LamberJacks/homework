@@ -1,20 +1,3 @@
-// const body = document.body
-// const nav = document.querySelector('.nav')
-// const burger = document.querySelector(".burger-icon")
-
-// nav.addEventListener('click', event => {
-//   const target = event.target
-//   if (target && target.classList.contains("burger-icon")) {
-//     body.classList.toggle("body--opened-menu")
-//   }
-// })
-
-// burger.addEventListener('click', () => {
-//   body.classList.toggle("body--opened-menu")
-
-// })
-
-
 
 (function () {
   document.addEventListener('click', burgerInin)
@@ -28,5 +11,24 @@
     if (width <= 900 && (burgerIcon || burgerNavLink)) {
       document.body.classList.toggle("body--opened-menu")
     }
+  }
+  const about__img = document.querySelector(".about__img-button")
+  const modal = document.querySelector(".modal")
+
+  about__img.addEventListener('click', modaOpen)
+  modal.addEventListener("click", modalClose)
+
+  function modaOpen(e) {
+    e.preventDefault()
+    document.body.classList.add("body--opened-modal")
+  }
+
+  function modalClose(e) {
+    e.preventDefault()
+    const target = e.target
+    if (target.closest('.modal__canel') || target.classList.contains('modal')) {
+      document.body.classList.remove("body--opened-modal")
+    }
+
   }
 })()
