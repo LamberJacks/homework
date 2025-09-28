@@ -86,7 +86,7 @@
   // Слайдер-галерия 
 
 
-  const swiper = new Swiper('.gallery__slider', {
+  const swiperGallery = new Swiper('.gallery__slider', {
 
     spaceBetween: 15,
     slidesPerView: 1.5,
@@ -111,6 +111,35 @@
       1101: {
         slidesPerView: 4,
         spaceBetween: 32
+      }
+    }
+  });
+
+  // Слайдер-отзывы
+  const swiperReviews = new Swiper('.reviews__slider', {
+
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+    // centeredSlidesBounds: true,
+
+    navigation: {
+      nextEl: '.reviews__next',
+      prevEl: '.reviews__prev',
+    },
+
+    scrollbar: {
+      el: '.reviews__scrollbar',
+      draggable: true,
+    },
+
+    breakpoints: {
+
+      901: {
+        slidesPerView: 1.5,
+      },
+      1201: {
+        slidesPerView: 2.1,
       }
     }
   });

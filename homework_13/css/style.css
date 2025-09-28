@@ -359,8 +359,6 @@
 /* ================================================== */
 
 
-.gallery {
-}
 .gallery__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -386,10 +384,6 @@
 }
 .gallery__title {
   margin-bottom: 20px;
-}
-.title {
-}
-.gallery__text {
 }
 .gallery__nav {
   display: flex;
@@ -435,6 +429,152 @@
   fill: var(--general-bg);
 }
 
+.gallery__slide{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.gallery__slide img{
+  width: 100%;
+}
+/* ================================================== */
+
+.reviews__slider{
+  overflow: visible;
+}
+
+.reviews__inner{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.reviews__info{
+  max-width: 632px;
+}
+
+.reviews__title{
+  margin-bottom: 20px;
+}
+
+.reviews__nav{
+  display: flex;
+  gap: 30px;
+}
+
+.reviews__wrapper{
+  margin-bottom: 40px;
+}
+.swiper-scrollbar.reviews__scrollbar {
+  position: static;
+  height: 7px;
+  width: 100%;
+}
+
+.reviews__slide{
+  background: var(--accent-bg);
+  border-radius: 20px;
+  padding: 30px 30px 40px;
+  display: flex;
+  gap: 30px;
+  transition: all .4s;
+  opacity: 0;
+  height: auto;
+}
+
+.reviews__slide.swiper-slide{
+  transform: scale(.9);
+}
+.swiper-slide-prev.reviews__slide{
+  opacity: 0.5;
+}
+.swiper-slide-next.reviews__slide{
+  opacity: 0.5;
+}
+.swiper-slide-active.reviews__slide{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.reviews__quote span{
+  display: block;
+  font-size: 32px;
+  line-height: .9;
+  font-family: "Gabriola", sans-serif;
+  color: var(--accent-text);
+  margin-bottom: 10px;
+}
+
+.reviews__student{
+  max-width: 165px;
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.reviews__student-img{
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.reviews__student-img img{
+  width: 100%;
+}
+.reviews__student-name{
+  margin-bottom: 5px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--accent-text);
+}
+
+.reviews__student-inst{
+  margin: 0 auto;
+  color: #ceaad0;
+}
+
+.reviews__scrollbar{
+  border-radius: 100px;
+  height: 7px;
+  background: var(--accent-bg);
+}
+
+.reviews__scrollbar .swiper-scrollbar-drag{
+  border-radius: 100px;
+  /* max-width: 132px; */
+  background: var(--accent-color);
+}
+
+.reviews__prev, .reviews__next {
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--accent-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+  
+  transition: all .4s;
+}
+.reviews__next:hover, 
+.reviews__prev:hover{
+  background: var(--accent-color);
+}
+.reviews__prev path, 
+.reviews__next path{
+  transition: all .4s;
+}
+.reviews__next:hover path, 
+.reviews__prev:hover path{
+  fill: var(--general-bg);
+}
+
+
+/* -------------- */
 .swiper-button-disabled{
   border: 1.5px solid #e1d9e1;
   cursor: default;
@@ -443,35 +583,13 @@
 .swiper-button-disabled path{
   fill: #e1d9e1;
 }
+.swiper-button-disabled:hover path{
+  fill: #e1d9e1;
+}
 .swiper-button-disabled:hover{
   background: transparent;
   cursor: default;
 }
-
-.swiper-button-disabled:hover path{
-  fill: #e1d9e1;
-}
-
-.swiper-pagination {
-}
-.gallery__slider {
-}
-.swiper {
-}
-.gallery__wraper {
-}
-.swiper-wrapper {
-}
-.gallery__slide {
-}
-.swiper-slide {
-  border-radius: 20px;
-  overflow: hidden;
-}
-.swiper-slide img{
-  width: 100%;
-}
-
 
 /* ================================================== */
 /* ================================================== */
@@ -627,6 +745,13 @@
     .gallery__info{
       max-width: none;
     }
+    /* ------------------ */
+
+    .reviews__scrollbar.swiper-scrollbar{
+      width: 50%;
+      margin: 0 auto;
+    }
+    
 }
 
 @media (max-width: 800px){
@@ -685,6 +810,17 @@
 
   .accordion-content__text{
     max-width: none;
+  }
+
+  /* ----------------- */
+
+  .reviews__inner{
+    align-items: stretch;
+    flex-direction: column;
+  }
+  
+  .reviews__nav{
+    align-self: flex-end;
   }
 }
 @media (max-width: 600px) {
@@ -780,6 +916,17 @@
     margin-bottom: 20px;
   }
 
+    /* ------------------------------------ */
+  
+    .reviews__slide{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .reviews__inner{
+      margin-bottom: 20px;
+    }
+
 }
 @media (max-width: 450px) {
   .hero__img-control{
@@ -830,5 +977,12 @@
   .program__action-button{
     width: 100%;
     gap: 10px;
+  }
+
+  /* ---------------- */
+
+
+  .reviews__slide{
+    padding: 30px 10px 30px;
   }
 }
