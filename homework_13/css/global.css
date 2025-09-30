@@ -6,6 +6,11 @@
   --accent-text: #1F1711;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vw; ;
+}
+
 .body{
   font-family: "Montserrat", sans-serif;
   font-weight: 400;

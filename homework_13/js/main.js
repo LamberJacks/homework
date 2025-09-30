@@ -72,6 +72,7 @@
       const accordionControl = e.target.closest(".accordion-list__control")
 
       if (!accordionControl) return
+      e.preventDefault()
       const accordionItem = accordionControl.parentElement;
       if (accordionOpen && accordionItem != accordionOpen) {
         accordionOpen.classList.remove("accordion-list__item--opened")
