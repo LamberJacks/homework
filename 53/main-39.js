@@ -37,7 +37,7 @@ console.log(adminArr);
 // Задание 4.
 // Напишите функцию first(arr, n), которая возвращает первые n элементов массива. Если n == 0, возвращается пустой массив [], если n == undefined, то возвращается массив с первым элементом.
 function first(arr, n){
-  if (n == 0 && n > arr.length) return [];
+  if (n == 0) return [];
   if ((n == undefined) && (arr.length != 0)) return [arr[0]];
   const result = [];
   for(let i = 0; i < n; i++){
@@ -47,5 +47,5 @@ function first(arr, n){
 }
 
 const arr = [1,2,3,4,5,6,7,8,9,10];
-const resArr = first(arr, 11);
+const resArr = first(arr, 5);
 console.log(resArr);
